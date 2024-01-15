@@ -1,12 +1,35 @@
 html,
 body {
   margin: 0;
+  background-color: black !important;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px !important;
+  font-family: 'lemon' !important;
+  color: white !important;
+  font-weight: bold !important;
+  background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red) !important;
+}
+
+p {
+  color: white;
+  font-family: 'lemon';
+  text-align: center;
+}
+.btn {
+  display: flex !important;
+ margin: auto !important;
+ padding: 10px !important;
+ border: solid 5px red !important;
 }
 
 #draw {
   display: flex;
   border: 20px solid #BADA55;
   margin: auto;
+  background-color: white;
 }
 
 #settingsPopup {
