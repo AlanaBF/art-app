@@ -48,3 +48,26 @@ canvas {
   padding: 10px !important;
   border: solid 5px red !important;
 }
+
+
+/* Footer */
+.footer {
+  display: flex;
+  width: 100%;
+  color: #dbedf3 !important;
+  background-color: #0077b6;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'lemon';
+  font-size: 1rem !important;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bi {
+  color: #dbedf3 !important;
+  font-size: 2em;
+}
