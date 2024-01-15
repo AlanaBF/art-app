@@ -4,34 +4,47 @@ body {
   background-color: black !important;
 }
 
-h1 {
-  text-align: center;
-  padding: 20px !important;
-  font-family: 'lemon' !important;
-  color: white !important;
-  font-weight: bold !important;
-  background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red) !important;
-}
-
 p {
   color: white;
-  font-family: 'lemon';
+  font-family: "lemon";
   text-align: center;
 }
-.btn {
-  display: flex !important;
- margin: auto !important;
- padding: 10px !important;
- border: solid 5px red !important;
-}
 
-#draw {
+canvas {
+  max-width: 100%;
+  margin: 0;
   display: flex;
-  border: 20px solid #BADA55;
-  margin: auto;
+  border: 20px solid #bada55;
   background-color: white;
 }
 
-#settingsPopup {
-  display: none;
+.navbar {
+  margin: 0;
+  padding: 20px !important;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  ) !important;
+}
+
+.navbar-brand {
+  margin: auto !important;
+  font-family: "lemon" !important;
+  color: white !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+.btn {
+  display: flex !important;
+  margin: 20px auto !important;
+  padding: 10px !important;
+  border: solid 5px red !important;
 }
