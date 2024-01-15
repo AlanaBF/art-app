@@ -2,3 +2,13 @@ html,
 body {
   margin: 0;
 }
+
+#draw {
+  display: flex;
+  border: 20px solid #BADA55;
+  margin: auto;
+}
+
+#settingsPopup {
+  display: none;
+}

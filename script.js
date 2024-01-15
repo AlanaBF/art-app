@@ -1,11 +1,12 @@
 const canvas = document.querySelector("#draw");
 const ctx = canvas.getContext("2d");
+
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
-ctx.lineWidth = 30;
+ctx.lineWidth = 10;
 //     ctx.globalCompositeOperation = 'multiply';
 
 let isDrawing = false;
@@ -31,14 +32,14 @@ function draw(e) {
   if (hue >= 360) {
     hue = 0;
   }
-  if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
-    direction = !direction;
-  }
-  if (direction) {
-    ctx.lineWidth++;
-  } else {
-    ctx.lineWidth--;
-  }
+  // if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+  //   direction = !direction;
+  // }
+  // if (direction) {
+  //   ctx.lineWidth++;
+  // } else {
+  //   ctx.lineWidth--;
+  // }
 }
 
 canvas.addEventListener("mousedown", (e) => {
@@ -49,3 +50,14 @@ canvas.addEventListener("mousedown", (e) => {
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mouseup", () => (isDrawing = false));
 canvas.addEventListener("mouseout", () => (isDrawing = false));
+
+
+
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+
+// Add an event listener to the clear button
+const clearButton = document.getElementById("clearButton");
+clearButton.addEventListener("click", clearCanvas);
